@@ -1,4 +1,4 @@
-package me.mizhoux;
+package com.cdy;
 
 import org.mybatis.generator.api.MyBatisGenerator;
 import org.mybatis.generator.config.Configuration;
@@ -24,6 +24,7 @@ public class Generator {
         DefaultShellCallback callback = new DefaultShellCallback(true);
         MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
         myBatisGenerator.generate(null);
+        System.out.println("执行成功");
     }
 
 }
